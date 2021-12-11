@@ -190,6 +190,9 @@ body {
   }
 }
 @media screen and (max-width: 465px) {
+  .banner_wrapper {
+    text-align: left;
+  }
   .banner_wrapper h1 {
     font-size: 1.9em;
     letter-spacing: 0rem;
