@@ -19,6 +19,8 @@
       src="https://kit.fontawesome.com/503de85b9f.js"
       crossorigin="anonymous"
     ></script>
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <section class="banner_section">
@@ -38,7 +40,7 @@
       </div>
     </section>
     <div class="ecosystem_wrapper">
-      <div class="ecosystem_main">
+      <div data-aos="fade-up" class="ecosystem_main">
         <div class="ecosystem_container">
           <div class="eco_left">
             <h1>DEFINITION OF ECOSYSTEM</h1>
@@ -64,7 +66,7 @@
       </div>
       <div class="definition_container">
         <!-- 1 Box -->
-        <div class="definition_box">
+        <div data-aos="fade-right" class="definition_box">
           <div class="definition_mini_title">
             <h1>
               An ecosystem is a community of interacting organisms and their
@@ -95,7 +97,7 @@
           </div>
         </div>
         <!-- 2 Box -->
-        <div class="definition_box">
+        <div data-aos="flip-left" class="definition_box">
           <div class="definition_mini_title">
             <h1>
               Organisms only survive in an ecosystem when their specific needs
@@ -135,7 +137,71 @@
             </div>
           </div>
         </div>
+        <!-- 3 Box -->
+        <div data-aos="fade-down-right" class="definition_box">
+          <div class="definition_mini_title">
+          <h1>A healthy ecosystem has many different kinds of organisms.</h1>
+        </div>
+        <div class="minitext_text">
+          <div class="definition_mini_text">
+            <p>
+              When you think of an ecosystem, such as a forest, there are many
+              organisms that are important. Trees, deer, plants, birds,
+              squirrels, and insects are prominent members of the ecosystem.
+              There are many more organisms that live in an ecosystem that are
+              not as noticeable.
+            </p>
+            <p>
+              We often forget about all the bacteria, fungus, and tiny insects
+              that are equally important. Ecosystems depend on many organisms to
+              keep them in balance.
+            </p>
+            <p>
+              When that balance is disrupted organisms cannot thrive, and some
+              may even die. Possible disruptions caused by humans include
+              pollution, deforestation, land development, or removing too many
+              resources like water. Making wise choices to protect ecosystems
+              will help all the living things continue to live and thrive. It’s
+              important to remember that not all disruptions are caused by
+              humans, some happen naturally.
+            </p>
+          </div>
+          <div class="img_right">
+            <img
+              src="./images/healthy_ecosystem.jpg"
+              alt="healthy_ecosystem"
+              title="Healthy Ecosystem"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- 4 Box -->
+      <div class="definition_box">
+        <div class="definition_mini_title">
+          <h1>
+            Example of plants, animals and soil found in different ecosystems.
+          </h1>
+        </div>
+        <div class="minitext_text">
+          <div class="definition_mini_text">
+            <table class="tbl">
+              <tr>
+                <th>Ecosystem</th>
+                <th>Plants</th>
+                <th>Animals</th>
+                <th>Soil</th>
+              </tr>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
+    <!-- AOS Library JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+      });
+    </script>
   </body>
 </html>

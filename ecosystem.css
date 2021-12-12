@@ -8,6 +8,10 @@
 body {
   background-color: var(--bgcolor);
 }
+::selection {
+  color: var(--navcolor);
+  background: var(--bggreen);
+}
 /*👉CSS Variable👈*/
 :root {
   --bgcolor: #078743;
@@ -135,7 +139,19 @@ body {
   border-radius: 6px;
   min-width: 360px;
   padding: 15px;
+  /*👉  animation: scrollUp 1.5s ease-in-out;
+👈*/
 }
+/*👉@keyframes scrollUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}👈*/
 .ecosystem_container {
   display: flex;
   justify-content: space-around;
@@ -274,7 +290,11 @@ body {
   transition: all 0.9s ease;
 }
 .img_right:hover img {
-  transform: rotate(-10deg) scale(1.5);
+  transform: rotate(10deg) scale(1.5);
+}
+/*👉Table👈*/
+.definition_mini_text .tbl tr th {
+  background-color: var(--navcolor);
 }
 /*👉Responsive👈*/
 @media screen and (max-width: 1047px) {
@@ -291,7 +311,7 @@ body {
 }
 @media screen and (max-width: 615px) {
   .banner_wrapper h1 {
-    font-size: 2em;
+    font-size: 2.4em;
   }
 }
 @media screen and (max-width: 465px) {
