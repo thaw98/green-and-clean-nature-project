@@ -133,7 +133,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -5px, rgba(0, 0, 0, 0.2) 0px -5px 0px inset;
   border-radius: 6px;
-  min-width: 300px;
+  min-width: 400px;
   padding: 15px;
 }
 .ecosystem_container {
@@ -141,7 +141,7 @@ body {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  min-width: 300px;
+  min-width: 400px;
 }
 .eco_left {
   width: 100%;
