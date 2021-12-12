@@ -29,7 +29,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
-  min-width: 400px;
+  min-width: 450px;
   padding-top: 80px;
   padding-bottom: 160px;
   padding-left: 50px;
@@ -133,7 +133,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -5px, rgba(0, 0, 0, 0.2) 0px -5px 0px inset;
   border-radius: 6px;
-  min-width: 400px;
+  min-width: 360px;
   padding: 15px;
 }
 .ecosystem_container {
@@ -141,7 +141,7 @@ body {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  min-width: 400px;
+  min-width: 300px;
 }
 .eco_left {
   width: 100%;
@@ -185,7 +185,7 @@ body {
 .definition_wrapper {
   background-color: var(--white);
   width: 100%;
-  min-width: 400px;
+  min-width: 450px;
 }
 .definition_title_wrapper {
   position: relative;
@@ -264,7 +264,7 @@ body {
 }
 .img_right {
   text-align: center;
-  width: 50%;
+  width: 70%;
   overflow: hidden;
 }
 .img_right img {
