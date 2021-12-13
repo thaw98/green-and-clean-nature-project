@@ -19,7 +19,8 @@ body {
   --cardbgcolor: #19801d;
   --white: #ffffff;
   --navcolor: #0b4220;
-  --greenhover: #d9ffdc;
+  --greentable: #c2eec2;
+  --greenhover: #8ee68e;
 }
 /*👉Banner👈*/
 .banner_section {
@@ -270,8 +271,19 @@ body {
   text-align: justify;
   padding-right: 30px;
 }
-.definition_mini_text p b {
+.definition_mini_text div .list li {
   color: black;
+  font-size: 1.2em;
+  margin-left: 20px;
+  margin-right: 25px;
+  text-align: justify;
+}
+.definition_mini_text div .list li b {
+  color: var(--bgcolor);
+  font-size: 1em;
+}
+.definition_mini_text p b {
+  color: var(--bgcolor);
 }
 .definition_mini_text p:nth-child(2) {
   padding-top: 15px;
@@ -294,53 +306,50 @@ body {
   transform: rotate(10deg) scale(1.5);
 }
 /*👉Table👈*/
-.definition_mini_text .tbl {
-  border: 2px solid var(--navcolor);
-  border-collapse: collapse;
-  margin: auto;
+.table {
   width: 100%;
+  border-collapse: collapse;
+}
+.table td,
+.table th {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
   font-size: 1.2em;
-}
-.definition_mini_text .tbl tr:nth-child(even) {
-  background-color: var(--bggreen);
-}
-.definition_mini_text .tbl tr:hover {
-  background-color: var(--greenhover);
-}
-.definition_mini_text .tbl th {
-  background-color: var(--navcolor);
-}
-.definition_mini_text .tbl td {
-  border: 1px solid #a5a5a5;
-}
-.definition_mini_text .tbl tr td {
   color: black;
-  padding-right: 0.5em;
-  padding-top: 0.5em;
 }
-.definition_mini_text .tbl tr td ul li {
+.table th {
+  text-align: center !important;
+}
+.table tr td ul li {
   color: black;
   list-style: none;
   padding: 0px;
 }
-.definition_mini_text .tbl tr td:nth-child(2) ul li::before {
+.table tr td:nth-child(2) ul li::before {
   content: "\1F332";
   margin: 0 0.5em;
 }
-.definition_mini_text .tbl tr td:nth-child(3) ul li::before {
+.table tr td:nth-child(3) ul li::before {
   content: "\2713";
   margin: 0 0.5em;
-  color: var(--navcolor);
+  color: var(--bgcolor);
   font-weight: bold;
 }
-.definition_mini_text .tbl tr td:first-child {
-  font-weight: bold;
-  padding: 0 0.5em;
-}
-.definition_mini_text .tbl tr td:last-child::before {
+.table td ul li:last-child::before {
   content: "\2BA9";
   color: var(--cardbgcolor);
   margin: 0 0.5em;
+}
+.table th {
+  background-color: var(--cardbgcolor);
+  color: #ffffff;
+}
+.table tbody tr:nth-child(even) {
+  background-color: var(--greentable);
+}
+.table tbody tr:hover {
+  background-color: var(--greenhover);
 }
 /*👉Responsive👈*/
 @media screen and (max-width: 1047px) {
@@ -377,5 +386,36 @@ body {
   }
   .img_right {
     width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .table thead {
+    display: none;
+  }
+
+  .table,
+  .table tbody,
+  .table tr,
+  .table td {
+    display: block;
+    width: 100%;
+  }
+  .table tr {
+    margin-bottom: 15px;
+  }
+  .table td {
+    padding-left: 50%;
+    text-align: left;
+    position: relative;
+  }
+  .table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: left;
   }
 }
