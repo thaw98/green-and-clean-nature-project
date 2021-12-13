@@ -9,7 +9,7 @@ body {
   background-color: var(--bgcolor);
 }
 ::selection {
-  color: var(--navcolor);
+  color: var(--bgcolor);
   background: var(--bggreen);
 }
 /*👉CSS Variable👈*/
@@ -19,6 +19,7 @@ body {
   --cardbgcolor: #19801d;
   --white: #ffffff;
   --navcolor: #0b4220;
+  --greenhover: #d9ffdc;
 }
 /*👉Banner👈*/
 .banner_section {
@@ -293,8 +294,53 @@ body {
   transform: rotate(10deg) scale(1.5);
 }
 /*👉Table👈*/
-.definition_mini_text .tbl tr th {
+.definition_mini_text .tbl {
+  border: 2px solid var(--navcolor);
+  border-collapse: collapse;
+  margin: auto;
+  width: 100%;
+  font-size: 1.2em;
+}
+.definition_mini_text .tbl tr:nth-child(even) {
+  background-color: var(--bggreen);
+}
+.definition_mini_text .tbl tr:hover {
+  background-color: var(--greenhover);
+}
+.definition_mini_text .tbl th {
   background-color: var(--navcolor);
+}
+.definition_mini_text .tbl td {
+  border: 1px solid #a5a5a5;
+}
+.definition_mini_text .tbl tr td {
+  color: black;
+  padding-right: 0.5em;
+  padding-top: 0.5em;
+}
+.definition_mini_text .tbl tr td ul li {
+  color: black;
+  list-style: none;
+  padding: 0px;
+}
+.definition_mini_text .tbl tr td:nth-child(2) ul li::before {
+  content: "\1F332";
+  margin: 0 0.5em;
+}
+.definition_mini_text .tbl tr td:nth-child(3) ul li::before {
+  content: "\2713";
+  margin: 0 0.5em;
+  color: var(--navcolor);
+  font-weight: bold;
+}
+.definition_mini_text .tbl tr td:first-child {
+  font-weight: bold;
+  padding: 0 0.5em;
+}
+.definition_mini_text .tbl tr td:last-child::before {
+  content: "\2BA9";
+  color: var(--cardbgcolor);
+  margin: 0 0.5em;
 }
 /*👉Responsive👈*/
 @media screen and (max-width: 1047px) {
