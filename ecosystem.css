@@ -222,6 +222,13 @@ body {
 .definition_h1 h1 {
   font-size: 1.8em;
 }
+.definition_container {
+  padding-top: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 100%;
+  min-width: 400px;
+}
 /*👉Definition Mini Box👈*/
 .definition_box::before {
   content: "";
@@ -246,13 +253,6 @@ body {
 }
 .definition_box:last-child {
   padding-bottom: 100px;
-}
-.definition_container {
-  padding-top: 50px;
-  padding-left: 40px;
-  padding-right: 40px;
-  width: 100%;
-  min-width: 400px;
 }
 /*👉Definition text and image box👈*/
 .minitext_text {
@@ -356,7 +356,6 @@ body {
 }
 /*👉Vocab Slot👈*/
 .vocab_wrapper {
-  background-color: var(--white);
   width: 100%;
   min-width: 450px;
 }
@@ -384,14 +383,16 @@ body {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  padding-bottom: 135px;
 }
 .vocab_card {
-  padding-top: 90px;
+  padding-top: 100px;
   min-width: 300px;
-  padding-left: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 /*👉Flip Card👈*/
-label {
+.vocab_card label {
   display: block;
   /*👉  position: absolute;
   top: 50%;
@@ -431,22 +432,22 @@ label {
 .flip-card .back {
   transform: rotateX(180deg);
   color: #000;
-  background: #fff;
+  background: var(--white);
 }
 
-label:hover .flip-card {
+.vocab_card label:hover .flip-card {
   transform: rotateX(2deg);
   box-shadow: 0 20px 20px rgba(50, 60, 60, 0.2);
 }
 
-input {
+.vocab_card input {
   display: none;
 }
 
 :checked + .flip-card {
   transform: rotateX(180deg);
 }
-label:hover :checked + .flip-card {
+.vocab_card label:hover :checked + .flip-card {
   transform: rotateX(175deg);
   box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2);
 }
@@ -485,6 +486,102 @@ hr {
   text-align: center;
   margin: 0 auto;
 }
+/*👉Ecosystem Q&A Slot👈*/
+.qa_wrapper {
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(14, 174, 87, 1) 0%,
+    rgba(12, 116, 117, 1) 90%
+  );
+  width: 100%;
+  min-width: 450px;
+}
+.qa_title_wrapper {
+  position: relative;
+  display: block;
+  margin: auto;
+}
+.qa_h1 {
+  position: absolute;
+  background-color: var(--navcolor);
+  top: 0;
+  right: 50%;
+  transform: translate(50%, -50%);
+  padding: 10px 25px 10px 25px;
+  font-style: italic;
+  width: 400px;
+}
+.qa_h1 h1 {
+  font-size: 1.8em;
+  text-align: center;
+}
+.qa_container {
+  padding-top: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 100%;
+  min-width: 400px;
+}
+/*👉QA Toggle👈*/
+.container.main section {
+  background-color: var(--greentable);
+}
+.container.main section label {
+  border-bottom: 1px solid var(--navcolor);
+  background-color: var(--cardbgcolor);
+  cursor: pointer;
+  display: block;
+  padding: 15px 20px;
+  margin: 0;
+  color: #fff;
+  position: relative;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.container.main section label::after {
+  content: "\271B";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffffff;
+  opacity: 0.7;
+  font-weight: bold;
+  font-size: 28px;
+}
+.container.main section div {
+  overflow: hidden;
+  padding: 0 20px;
+  visibility: hidden;
+  max-height: 0;
+  transition: all 0.8s ease;
+}
+.container.main section div p {
+  color: black;
+}
+.container.main section div * {
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+.container.main section input {
+  display: none;
+}
+.container.main section input:checked + label + div {
+  padding: 20px;
+  max-height: 100vh;
+  visibility: visible;
+  opacity: 1;
+}
+.container.main section input:checked + label + div * {
+  opacity: 1;
+}
+.container.main section input:checked + label::after {
+  content: "\268A";
+}
+
 /*👉Responsive👈*/
 @media screen and (max-width: 1047px) {
   .ecosystem_container {
