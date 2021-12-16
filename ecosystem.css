@@ -57,7 +57,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
-  min-width: 400px;
+  min-width: 450px;
   padding-top: 80px;
   padding-bottom: 160px;
   padding-left: 50px;
@@ -213,7 +213,7 @@ body {
 .definition_wrapper {
   background-color: var(--white);
   width: 100%;
-  min-width: 400px;
+  min-width: 450px;
 }
 .definition_title_wrapper {
   position: relative;
@@ -237,7 +237,7 @@ body {
   padding-left: 40px;
   padding-right: 40px;
   width: 100%;
-  min-width: 400px;
+  min-width: 450px;
 }
 /*👉Definition Mini Box👈*/
 .definition_box::before {
@@ -358,7 +358,7 @@ body {
 /*👉Vocab Slot👈*/
 .vocab_wrapper {
   width: 100%;
-  min-width: 400px;
+  min-width: 450px;
 }
 .vocab_title_wrapper {
   position: relative;
@@ -488,7 +488,7 @@ hr {
     rgba(12, 116, 117, 1) 90%
   );
   width: 100%;
-  min-width: 400px;
+  min-width: 450px;
 }
 .qa_title_wrapper {
   position: relative;
@@ -519,7 +519,7 @@ hr {
   padding-left: 40px;
   padding-right: 40px;
   width: 100%;
-  min-width: 400px;
+  min-width: 450px;
 }
 /*👉QA Toggle👈*/
 .container.main section {
