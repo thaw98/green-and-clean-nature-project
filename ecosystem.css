@@ -57,7 +57,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
-  min-width: 450px;
+  min-width: 400px;
   padding-top: 80px;
   padding-bottom: 160px;
   padding-left: 50px;
@@ -149,8 +149,8 @@ body {
 /*👉Definition of ecosystem👈*/
 .ecosystem_wrapper {
   width: 100%;
-  /*👉  padding-left: 40px;
-  padding-right: 40px;👈*/
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .ecosystem_main {
   display: flex;
@@ -213,7 +213,7 @@ body {
 .definition_wrapper {
   background-color: var(--white);
   width: 100%;
-  min-width: 450px;
+  min-width: 400px;
 }
 .definition_title_wrapper {
   position: relative;
@@ -358,7 +358,7 @@ body {
 /*👉Vocab Slot👈*/
 .vocab_wrapper {
   width: 100%;
-  min-width: 450px;
+  min-width: 400px;
 }
 .vocab_title_wrapper {
   position: relative;
@@ -488,7 +488,7 @@ hr {
     rgba(12, 116, 117, 1) 90%
   );
   width: 100%;
-  min-width: 450px;
+  min-width: 400px;
 }
 .qa_title_wrapper {
   position: relative;
