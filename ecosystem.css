@@ -384,6 +384,7 @@ body {
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding-bottom: 135px;
+  padding-left: 20px;
 }
 .vocab_card {
   padding-top: 100px;
@@ -433,8 +434,11 @@ body {
   transform: rotateX(180deg);
   color: #000;
   background: var(--white);
+  overflow: hidden;
 }
-
+.flip-card .back img {
+  width: 100%;
+}
 .vocab_card label:hover .flip-card {
   transform: rotateX(2deg);
   box-shadow: 0 20px 20px rgba(50, 60, 60, 0.2);
@@ -503,7 +507,10 @@ hr {
 }
 .qa_h1 {
   position: absolute;
-  background-color: var(--navcolor);
+  background-color: var(--white);
+  box-shadow: rgba(46, 255, 192, 0.4) 5px 5px, rgba(46, 255, 192, 0.3) 10px 10px,
+    rgba(46, 255, 192, 0.2) 15px 15px, rgba(46, 255, 192, 0.1) 20px 20px,
+    rgba(46, 255, 192, 0.05) 25px 25px;
   top: 0;
   right: 50%;
   transform: translate(50%, -50%);
@@ -514,9 +521,11 @@ hr {
 .qa_h1 h1 {
   font-size: 1.8em;
   text-align: center;
+  color: var(--bgcolor);
 }
 .qa_container {
-  padding-top: 50px;
+  padding-top: 105px;
+  padding-bottom: 135px;
   padding-left: 40px;
   padding-right: 40px;
   width: 100%;
@@ -527,15 +536,16 @@ hr {
   background-color: var(--greentable);
 }
 .container.main section label {
-  border-bottom: 1px solid var(--navcolor);
-  background-color: var(--cardbgcolor);
+  border-bottom: 1.5px solid var(--navcolor);
+  background-color: var(--bgcolor);
   cursor: pointer;
   display: block;
   padding: 15px 20px;
   margin: 0;
-  color: #fff;
+  color: var(--white);
   position: relative;
   font-size: 22px;
+  font-weight: bold;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -547,7 +557,7 @@ hr {
   right: 20px;
   top: 50%;
   transform: translateY(-50%);
-  color: #ffffff;
+  color: var(--white);
   opacity: 0.7;
   font-weight: bold;
   font-size: 28px;
@@ -561,6 +571,13 @@ hr {
 }
 .container.main section div p {
   color: black;
+  font-size: 1.1em;
+  padding-bottom: 10px;
+  line-height: 40px;
+}
+.container.main section div p b {
+  color: black;
+  font-size: 1.1em;
 }
 .container.main section div * {
   opacity: 0;
@@ -581,7 +598,6 @@ hr {
 .container.main section input:checked + label::after {
   content: "\268A";
 }
-
 /*👉Responsive👈*/
 @media screen and (max-width: 1047px) {
   .ecosystem_container {
