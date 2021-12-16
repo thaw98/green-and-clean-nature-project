@@ -149,8 +149,8 @@ body {
 /*👉Definition of ecosystem👈*/
 .ecosystem_wrapper {
   width: 100%;
-  padding-left: 40px;
-  padding-right: 40px;
+  /*👉  padding-left: 40px;
+  padding-right: 40px;👈*/
 }
 .ecosystem_main {
   display: flex;
