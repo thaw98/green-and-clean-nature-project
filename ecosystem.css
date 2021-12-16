@@ -219,6 +219,8 @@ body {
   position: relative;
   display: block;
   margin: 0 auto;
+  width: 100%;
+  min-width: 450px;
 }
 .definition_h1 {
   position: absolute;
@@ -237,7 +239,7 @@ body {
   padding-left: 40px;
   padding-right: 40px;
   width: 100%;
-  min-width: 450px;
+  min-width: 400px;
 }
 /*👉Definition Mini Box👈*/
 .definition_box::before {
@@ -364,6 +366,8 @@ body {
   position: relative;
   display: block;
   margin: auto;
+  width: 100%;
+  min-width: 450px;
 }
 .vocab_h1 {
   position: absolute;
@@ -494,6 +498,8 @@ hr {
   position: relative;
   display: block;
   margin: auto;
+  width: 100%;
+  min-width: 450px;
 }
 .qa_h1 {
   position: absolute;
@@ -519,7 +525,7 @@ hr {
   padding-left: 40px;
   padding-right: 40px;
   width: 100%;
-  min-width: 450px;
+  min-width: 400px;
 }
 /*👉QA Toggle👈*/
 .container.main section {
