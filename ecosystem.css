@@ -149,12 +149,12 @@ body {
 /*👉Definition of ecosystem👈*/
 .ecosystem_wrapper {
   width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .ecosystem_main {
   display: flex;
   justify-content: center;
-  margin-left: 40px;
-  margin-right: 40px;
   margin-top: 50px;
   margin-bottom: 80px;
   background-color: var(--white);
