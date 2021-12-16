@@ -269,7 +269,6 @@ body {
 }
 .definition_mini_text {
   width: 100%;
-  min-width: 400px;
 }
 .definition_mini_text p {
   color: black;
