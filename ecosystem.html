@@ -5,6 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Pyae Phyo Thaw" />
+    <meta
+      name="description"
+      content="An ecosystem encompasses living organisms and the nonliving elements of their environments. Hence, the components of an ecosystem include animals, plants, microorganisms, rocks, soil, minerals, atmosphere, and the surrounding water masses."
+    />
+    <!-- Thumbnail image in link -->
+    <meta property="og:image" content="./images/zebra.png" />
+    <meta property="og:image:secure_url" content="./images/zebra.png" />
+    <meta property="og:image:width" content="640" />
+    <meta property="og:image:height" content="480" />
+    <meta property="og:image:alt" content="zebra" />
+    <meta property="og:image:type" content="image/png" />
     <title>Ecosystem</title>
     <!-- Link to external CSS -->
     <link rel="stylesheet" href="ecosystem.css" />
@@ -26,6 +37,11 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
+    <!-- Go to up button -->
+    <button type="button" id="btn-back-to-top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+    <!-- Banner -->
     <section class="banner_section">
       <div class="banner_wrapper">
         <h1 class="banner_content">
@@ -686,5 +702,7 @@
         duration: 1500,
       });
     </script>
+    <!-- Back to Top Button -->
+    <script src="gototop.js"></script>
   </body>
 </html>
